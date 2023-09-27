@@ -26,22 +26,20 @@ app.get('/', (req, res) => {
     res.send('Hi, there!');
 });
 
-app.post('/reverse', (req, res) => {
-    let message = req.body.message;
-    res.send(message.split('').reverse().join(''));
-});
-
-app.post('/insertUSER', async (req, res) => {
-    let userName = 'Laud';
-    let passWord = await Password.toHashString('123456');
-    const package = {'email':'a@a.com', 'username': userName, 'password': passWord};
+app.post('/register', async (req, res) => {
+    let userName = req.body.username;
+    let passWord = req.body.password;
+    let email = req.body.email;
+    passWord = await Password.toHashString(passWord);
+    const package = {'email':email, 'username': userName, 'password': passWord};
     const user = new User(package);
     await user.save();
-    res.send('User saved');
+    token = generateJWT(package)
+    res.send('Registration Successful');
 });
 
 app.post('/insertCHATROOM', async (req, res) => {
-    let adminID = 'barar bal';
+    let adminID = req.body;
     const package = {'adminID': adminID, ArrayUSER: [adminID]};
     const chat = new Chat(package);
     await chat.save();
