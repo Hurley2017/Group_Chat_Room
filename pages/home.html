@@ -7,20 +7,48 @@
     <title>Home</title>
 </head>
 <body>
-    <header>
+    <nav class="navbar">
         <h1>Welcome, User!</h1>
-    </header>
+    </nav>
+    <a href="#" class="logout-button">Logout</a>
     <main>
         <div class="container">
-            <div class="card">
-                <h2>Create Chat Room</h2>
-                <p>Create a new chat room and start a conversation.</p>
-                <a href="create-chat-room.html">Create</a>
+            <div class="cards">
+                <div class="card">
+                    <h2>Create Chat Room</h2>
+                    <p>Create a new chat room and start a conversation.</p>
+                    <a href="create-chat-room.html">Create</a>
+                </div>
+                <div class="card">
+                    <h2>Join Chat Room</h2>
+                    <p>Join an existing chat room and connect with others.</p>
+                    <a href="join-chat-room.html">Join</a>
+                </div>
             </div>
-            <div class="card">
-                <h2>Join Chat Room</h2>
-                <p>Join an existing chat room and connect with others.</p>
-                <a href="join-chat-room.html">Join</a>
+            <div class="space"></div> <!-- Add space -->
+            <div class="chat-rooms">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="4">Existing Chat Rooms</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Chat Room 1</td>
+                            <td><button class="join-button">Join</button></td>
+                            <td><button class="copy-button">Copy</button></td>
+                            <td><button class="delete-button">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Chat Room 2</td>
+                            <td><button class="join-button">Join</button></td>
+                            <td><button class="copy-button">Copy</button></td>
+                            <td><button class="delete-button">Delete</button></td>
+                        </tr>
+                        <!-- Add more chat rooms as needed -->
+                    </tbody>
+                </table>
             </div>
         </div>
     </main>
