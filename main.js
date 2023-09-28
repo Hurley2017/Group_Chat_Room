@@ -19,6 +19,10 @@ app.get('/home', (req, res) => {
     res.sendFile(path.join(__dirname, 'pages', 'home.html'));
 });
 
+app.get('/chat', (req, res) => {
+    res.sendFile(path.join(__dirname, 'pages', 'chat.html'));
+});
+
 module.exports = { app };
 
 
