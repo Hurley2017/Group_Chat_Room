@@ -1,13 +1,24 @@
 const express = require('express');
+const bodyparser = require('body-parser');
 const path = require('path');
 const app = express();
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+app.use(express.static(path.join(__dirname, 'pages')));
+app.use(express.static(path.join(__dirname, 'scripts')));
+app.use(express.static(path.join(__dirname, 'styles')));
 
-app.get('/', function(req, res, next) {
-    res.render('index', { title: 'Hello World!' });
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'pages', 'login.html'));
 });
 
-module.exports = app;
+app.get('/register', (req, res) => {
+    res.sendFile(path.join(__dirname, 'pages', 'register.html'));
+});
+
+app.get('/home', (req, res) => {
+    res.sendFile(path.join(__dirname, 'pages', 'home.html'));
+});
+
+module.exports = { app };
+
+
