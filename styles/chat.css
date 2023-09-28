@@ -93,17 +93,18 @@ main {
     padding: 10px;
     border: none;
     border-radius: 0px;
-    margin-right: 11%;
+    margin-right: 10%;
     align-self: center;
 }
 
 .message-input button {
     background-color: #007BFF;
     color: #fff;
-    padding: 10px 20px;
+    padding: 8px 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: medium;
 }
 
 .message-input button:hover {
@@ -151,10 +152,11 @@ main {
 .leave-button {
     background-color: #f00;
     color: #fff;
-    padding: 5px 10px;
+    padding: 8px 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: medium;
 }
 .leave-button:hover {
     background-color: #d00;
@@ -162,5 +164,46 @@ main {
 
 /* ... (existing styles) ... */
 
+/* CSS for message styling */
+.message-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    overflow-y: scroll;
+    max-height: 80%;
+}
+
+.message {
+    display: inline-block;
+    margin-bottom: 10px;
+    clear: both;
+    border-radius: 25px;
+    padding: 10px;
+    max-width: 70%; /* Adjust as needed */
+}
+
+.outgoing {
+    float: right;
+    background-color: #4CAF50; /* Green for outgoing messages */
+    color: #fff;
+    text-align: right;
+}
+
+.incoming {
+    float: left;
+    background-color: #2196F3; /* Blue for incoming messages */
+    color: #fff;
+    text-align: left;
+}
+
+.message-text {
+    margin: 0;
+}
+
+.message-sender {
+    font-size: small;
+    margin-top: 5px;
+    text-align: right; /* Adjust to 'left' for incoming messages */
+}
 
 
