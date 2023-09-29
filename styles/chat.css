@@ -26,7 +26,7 @@ body {
 }
 
 .logout-button {
-    display: inline-block; /* Added for alignment */
+    display: inline-block;
     background-color: #ff0000;
     color: #fff;
     padding: 5px 10px;
@@ -34,11 +34,11 @@ body {
     text-decoration: none;
     position: absolute;
     top: 7%;
-    left: 9.5%; /* Adjust this value for positioning */
+    left: 9.5%;
 }
 
 .home-button {
-    display: inline-block; /* Added for alignment */
+    display: inline-block;
     background-color: #0606f6;
     color: #fff;
     padding: 5px 10px;
@@ -46,7 +46,7 @@ body {
     text-decoration: none;
     position: absolute;
     top: 7%;
-    left: 6%; /* Adjust this value for positioning */
+    left: 6%;
 }
 
 .home-button:hover {
@@ -64,7 +64,6 @@ main {
     height: calc(100vh - 100px);
 }
 
-/* Add this CSS to settle the text box and send button at the bottom of the chat box */
 .chat-box {
     background-color: #fff;
     width: 80%;
@@ -80,7 +79,7 @@ main {
 
 .message-input {
     position: absolute;
-    bottom: 4px; /* Adjust the bottom spacing as needed */
+    bottom: 4px;
     left: 32.5%;
     right: 32.5%;
     padding: 10px;
@@ -89,7 +88,6 @@ main {
 }
 
 .message-input input {
-    /* flex-grow: 1; */
     padding: 10px;
     border: none;
     border-radius: 0px;
@@ -111,7 +109,6 @@ main {
     background-color: #0056b3;
 }
 
-/* Add styles for the chat header */
 .chat-header {
     background-color: #78f512;
     color: #ffffff;
@@ -128,9 +125,6 @@ main {
     margin: 10;
 }
 
-/* ... (existing styles) ... */
-
-/* Adjust the chat header styles to align text left and add the leave button */
 .chat-header {
     background-color: #ffffff;
     color: #0653b3;
@@ -138,17 +132,15 @@ main {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     display: flex;
-    justify-content: space-between; /* Align items horizontally */
-    align-items: center; /* Align items vertically */
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Style the chat room title */
 .chat-room-title {
     margin: 0;
-    text-align: left; /* Align text to the left */
+    text-align: left;
 }
 
-/* Style the leave button */
 .leave-button {
     background-color: #f00;
     color: #fff;
@@ -162,9 +154,6 @@ main {
     background-color: #d00;
 }
 
-/* ... (existing styles) ... */
-
-/* CSS for message styling */
 .message-container {
     max-width: 100%;
     margin: 0 auto;
@@ -179,19 +168,19 @@ main {
     clear: both;
     border-radius: 20px;
     padding: 15px;
-    max-width: 70%; /* Adjust as needed */
+    max-width: 70%;
 }
 
 .outgoing {
     float: right;
-    background-color: #2196F3; /* Green for outgoing messages */
+    background-color: #2196F3;
     color: #fff;
     text-align: right;
 }
 
 .incoming {
     float: left;
-    background-color: #4CAF50; /* Blue for incoming messages */
+    background-color: #4CAF50;
     color: #fff;
     text-align: left;
 }
@@ -204,14 +193,14 @@ main {
 .message-sender {
     font-size: 13px;
     margin-top: 10px;
-    text-align: right; /* Adjust to 'left' for incoming messages */
+    text-align: right;
     font-style: italic;
 }
 
 .message-receiver {
     font-size: 13px;
     margin-top: 5px;
-    text-align: left; /* Adjust to 'left' for incoming messages */
+    text-align: left;
     font-style: italic;
 }
 

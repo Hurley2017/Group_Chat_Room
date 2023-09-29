@@ -1,4 +1,3 @@
-/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
@@ -146,7 +145,6 @@ th {
     text-decoration: none;
     position: absolute;
     top: 7%;
-    /* right: 3%; */
     left: 6%;
 }
 
