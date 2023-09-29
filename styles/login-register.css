@@ -12,6 +12,7 @@ body {
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -66,4 +67,19 @@ button:hover {
 }
 .login-register-link {
     margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+}
+
+/* Style for the logo */
+.container img {
+    max-width: 50%; /* Adjust the size as needed */
+    margin-bottom: 0px; /* Add some space between the logo and the form */
+    margin-top: 0%;
 }
