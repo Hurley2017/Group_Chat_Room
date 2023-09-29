@@ -168,42 +168,50 @@ main {
 .message-container {
     max-width: 100%;
     margin: 0 auto;
-    padding: 10px;
+    padding: 20px;
     overflow-y: scroll;
-    max-height: 80%;
+    max-height: 84%;
 }
 
 .message {
     display: inline-block;
     margin-bottom: 10px;
     clear: both;
-    border-radius: 25px;
-    padding: 10px;
+    border-radius: 20px;
+    padding: 15px;
     max-width: 70%; /* Adjust as needed */
 }
 
 .outgoing {
     float: right;
-    background-color: #4CAF50; /* Green for outgoing messages */
+    background-color: #2196F3; /* Green for outgoing messages */
     color: #fff;
     text-align: right;
 }
 
 .incoming {
     float: left;
-    background-color: #2196F3; /* Blue for incoming messages */
+    background-color: #4CAF50; /* Blue for incoming messages */
     color: #fff;
     text-align: left;
 }
 
 .message-text {
     margin: 0;
+    font-weight: bold;
 }
 
 .message-sender {
-    font-size: small;
-    margin-top: 5px;
+    font-size: 13px;
+    margin-top: 10px;
     text-align: right; /* Adjust to 'left' for incoming messages */
+    font-style: italic;
 }
 
+.message-receiver {
+    font-size: 13px;
+    margin-top: 5px;
+    text-align: left; /* Adjust to 'left' for incoming messages */
+    font-style: italic;
+}
 
