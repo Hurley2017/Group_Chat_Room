@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Home</title>
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Welcome, User!</h1>
+    </nav>
+    <a href="/" class="logout-button">Logout</a>
+    <main>
+        <div class="container">
+            <div class="cards">
+                <div class="card">
+                    <h2>Create Chat Room</h2>
+                    <p>Create a new chat room and start a conversation.</p>
+                    <a href="/create">Create</a>
+                </div>
+                <div class="card">
+                    <h2>Join Chat Room</h2>
+                    <p>Join an existing chat room and connect with others.</p>
+                    <a href="/join">Join</a>
+                </div>
+            </div>
+            <div class="space"></div>
+            <div class="chat-rooms">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="4">Existing Chat Rooms</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Chat Room 1</td>
+                            <td><button class="join-button">Join</button></td>
+                            <td><button class="copy-button">Copy</button></td>
+                            <td><button class="delete-button">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Chat Room 2</td>
+                            <td><button class="join-button">Join</button></td>
+                            <td><button class="copy-button">Copy</button></td>
+                            <td><button class="delete-button">Delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

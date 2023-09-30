@@ -23,8 +23,8 @@ const allUsers = asyncHandler(async (req, res) => {
 //@route           POST /api/user/
 //@access          Public
 const registerUser = asyncHandler(async (req, res) => {
-  const { name, email, password, pic } = req.body;
-
+  const { name, email, password } = req.body;
+  console.log(req.body);
   if (!name || !email || !password) {
     res.status(400);
     throw new Error("Please Enter all the Feilds");
